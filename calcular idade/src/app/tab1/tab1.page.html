@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Fim de ano
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label class="ion-text-wrap">Clique em calcular para saber quantos dias faltam para acabar o ano</ion-label>
+  </ion-item>
+  <ion-button (click)="calcular()">Calcular</ion-button>
+  <ion-item>
+    <ion-label>{{datadehoje}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{datafimdeano}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{diasrestantes}}</ion-label>
+  </ion-item>
+</ion-content>
